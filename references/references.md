@@ -1,19 +1,255 @@
 # Research Papers
 
-This section contains verified research papers related to LLM factuality, hallucination, scientific claim verification, and evaluation.
+This section contains verified scholarly papers related to Large Language Model (LLM) factuality, hallucination, scientific claim verification, evidence grounding, and evaluation across scientific and biomedical domains.
 
-## Survey and Review Papers
+## 1. Survey and Review Papers
 
-## Foundational Papers
+### 1. Factuality of Large Language Models: A Survey
 
-## Scientific Claim Verification
+- **Authors:** Yuxia Wang, Minghan Wang, Muhammad Arslan Manzoor, Fei Liu, Georgi Nenkov Georgiev, Rocktim Jyoti Das, Preslav Nakov
+- **Year:** 2024
+- **Venue:** EMNLP 2024
+- **DOI:** 10.18653/v1/2024.emnlp-main.1088
+- **Category:** Survey and Review
+- **Description:** This paper provides a comprehensive survey of factuality in large language models. It discusses factuality problems, evaluation methods, causes of factual errors, and approaches for improving factuality.
+- **Link:** https://aclanthology.org/2024.emnlp-main.1088/
 
-## Knowledge and Factuality Benchmarks
+### 2. FELM: Benchmarking Factuality Evaluation of Large Language Models
 
-## Long-Form Factuality Evaluation
+- **Authors:** Shiqi Chen, Yiran Zhao, Jinghan Zhang, I-Chun Chern, Siyang Gao, Pengfei Liu, Junxian He
+- **Year:** 2023
+- **Venue:** NeurIPS 2023
+- **DOI:** Not assigned
+- **Category:** Factuality Benchmark
+- **Description:** FELM introduces a fine-grained benchmark for evaluating factuality in large language models across different domains and types of generated content.
+- **Link:** https://arxiv.org/abs/2310.00741
 
-## Biomedical and Healthcare Factuality
+---
 
-## Retrieval-Augmented Generation and Evidence Grounding
+## 2. Scientific Claim Verification
 
-## Recent Research
+### 3. Fact or Fiction: Verifying Scientific Claims
+
+- **Authors:** David Wadden, Shanchuan Lin, Kyle Lo, Lucy Lu Wang, Madeleine van Zuylen, Arman Cohan, Hannaneh Hajishirzi
+- **Year:** 2020
+- **Venue:** EMNLP 2020
+- **DOI:** 10.18653/v1/2020.emnlp-main.609
+- **Category:** Scientific Claim Verification
+- **Description:** This paper introduces SciFact, a benchmark for verifying scientific claims using evidence from scientific papers. It is directly relevant to evaluating factual statements in scientific domains.
+- **Link:** https://aclanthology.org/2020.emnlp-main.609/
+
+### 4. ExpertQA: Expert-Curated Questions and Attributed Answers
+
+- **Authors:** Chaitanya Malaviya, Subin Lee, Sihao Chen, Elizabeth Sieber, Mark Yatskar, Dan Roth
+- **Year:** 2024
+- **Venue:** NAACL 2024
+- **DOI:** 10.18653/v1/2024.naacl-long.167
+- **Category:** Domain-Specific Factuality
+- **Description:** ExpertQA contains questions and answers created and evaluated by experts across many fields. It is useful for studying factuality and attribution in domain-specific LLM responses.
+- **Link:** https://aclanthology.org/2024.naacl-long.167/
+
+---
+
+## 3. Factuality and Hallucination Benchmarks
+
+### 5. FActScore: Fine-grained Atomic Evaluation of Factual Precision in Long Form Text Generation
+
+- **Authors:** Sewon Min, Kalpesh Krishna, Xinxi Lyu, Mike Lewis, Wen-tau Yih, Pang Koh, Mohit Iyyer, Luke Zettlemoyer, Hannaneh Hajishirzi
+- **Year:** 2023
+- **Venue:** EMNLP 2023
+- **DOI:** 10.18653/v1/2023.emnlp-main.741
+- **Category:** Long-Form Factuality
+- **Description:** FActScore evaluates the factual precision of long-form generated text by breaking responses into atomic facts and checking whether those facts are supported by reliable sources.
+- **Link:** https://aclanthology.org/2023.emnlp-main.741/
+
+### 6. HaluEval: A Large-Scale Hallucination Evaluation Benchmark for Large Language Models
+
+- **Authors:** Junyi Li, Xiaoxue Cheng, Xin Zhao, Jian-Yun Nie, Ji-Rong Wen
+- **Year:** 2023
+- **Venue:** EMNLP 2023
+- **DOI:** 10.18653/v1/2023.emnlp-main.397
+- **Category:** Hallucination Benchmark
+- **Description:** HaluEval provides a large-scale benchmark for evaluating hallucinations in language model outputs and investigates the ability of models to recognize hallucinated information.
+- **Link:** https://aclanthology.org/2023.emnlp-main.397/
+
+### 7. TruthfulQA: Measuring How Models Mimic Human Falsehoods
+
+- **Authors:** Stephanie Lin, Jacob Hilton, Owain Evans
+- **Year:** 2022
+- **Venue:** ACL 2022
+- **DOI:** 10.18653/v1/2022.acl-long.229
+- **Category:** Truthfulness Benchmark
+- **Description:** TruthfulQA evaluates whether language models provide truthful answers rather than reproducing common misconceptions and false beliefs.
+- **Link:** https://aclanthology.org/2022.acl-long.229/
+
+### 8. Long-form factuality in large language models
+
+- **Authors:** Jerry Wei, Chengrun Yang, Xinying Song, Yifeng Lu, Nathan Hu, Jie Huang, Dustin Tran, Daiyi Peng, Ruibo Liu, Da Huang, Cosmo Du, Quoc V. Le
+- **Year:** 2024
+- **Venue:** NeurIPS 2024
+- **Category:** Long-Form Factuality
+- **Description:** This work introduces LongFact and SAFE for evaluating the factuality of long-form answers generated by language models using search-based evidence verification.
+- **Link:** https://deepmind.google/research/publications/85420/
+
+### 9. SelfCheckGPT: Zero-Resource Black-Box Hallucination Detection for Generative Large Language Models
+
+- **Authors:** Potsawee Manakul, Adian Liusie, Mark Gales
+- **Year:** 2023
+- **Venue:** EMNLP 2023
+- **DOI:** 10.18653/v1/2023.emnlp-main.557
+- **Category:** Hallucination Detection
+- **Description:** SelfCheckGPT detects possible hallucinations by comparing multiple generated responses from the same model without requiring external databases or model internals.
+- **Link:** https://aclanthology.org/2023.emnlp-main.557/
+
+### 10. FreshLLMs: Refreshing Large Language Models with Search Engine Augmentation
+
+- **Authors:** Tu Vu, Mohit Iyyer, Xuezhi Wang, Noah Constant, Jerry Wei, Jason Wei, Chris Tar, Yun-Hsuan Sung, Denny Zhou, Quoc V. Le, Thang Luong
+- **Year:** 2024
+- **Venue:** Findings of ACL 2024
+- **Category:** Factuality and Dynamic Knowledge
+- **Description:** FreshLLMs introduces FreshQA, a benchmark designed to evaluate whether language models can provide accurate answers about changing and up-to-date information.
+- **Link:** https://aclanthology.org/2024.findings-acl.813/
+
+---
+
+## 4. Factual Consistency Evaluation
+
+### 11. TRUE: Re-evaluating Factual Consistency Evaluation
+
+- **Authors:** Or Honovich, Roee Aharoni, Jonathan Herzig, Hagai Taitelbaum, Doron Kukliansy, Vered Cohen, Thomas Scialom, Idan Szpektor, Avinatan Hassidim, Yossi Matias
+- **Year:** 2022
+- **Venue:** NAACL 2022
+- **DOI:** 10.18653/v1/2022.naacl-main.287
+- **Category:** Factual Consistency
+- **Description:** TRUE evaluates existing factual consistency metrics across multiple datasets and studies how reliably automatic metrics measure factual correctness.
+- **Link:** https://aclanthology.org/2022.naacl-main.287/
+
+### 12. Q²: Evaluating Factual Consistency in Knowledge-Grounded Dialogues via Question Generation and Question Answering
+
+- **Authors:** Or Honovich, Leshem Choshen, Roee Aharoni, Ella Neeman, Idan Szpektor, Omri Abend
+- **Year:** 2021
+- **Venue:** EMNLP 2021
+- **DOI:** 10.18653/v1/2021.emnlp-main.619
+- **Category:** Factual Consistency Evaluation
+- **Description:** Q² evaluates whether generated responses are consistent with supporting knowledge by generating questions from the response and checking their answers against the source knowledge.
+- **Link:** https://aclanthology.org/2021.emnlp-main.619/
+
+---
+
+## 5. Citation and Evidence Grounding
+
+### 13. Enabling Large Language Models to Generate Text with Citations
+
+- **Authors:** Tianyu Gao, Howard Yen, Jiatong Yu, Danqi Chen
+- **Year:** 2023
+- **Venue:** EMNLP 2023
+- **DOI:** 10.18653/v1/2023.emnlp-main.398
+- **Category:** Citation and Evidence Grounding
+- **Description:** This work introduces ALCE, a benchmark for evaluating whether language models can generate answers supported by appropriate citations and evidence.
+- **Link:** https://aclanthology.org/2023.emnlp-main.398/
+
+### 14. RAGTruth: A Hallucination Corpus for Developing Trustworthy Retrieval-Augmented Language Models
+
+- **Authors:** Cheng Niu, Yuanhao Wu, Juno Zhu, Siliang Xu, KaShun Shum, Randy Zhong, Juntong Song, Tong Zhang
+- **Year:** 2024
+- **Venue:** ACL 2024
+- **DOI:** 10.18653/v1/2024.acl-long.585
+- **Category:** RAG and Hallucination
+- **Description:** RAGTruth provides a corpus for studying hallucinations in retrieval-augmented generation systems and supports research into trustworthy RAG systems.
+- **Link:** https://aclanthology.org/2024.acl-long.585/
+
+---
+
+## 6. Retrieval-Augmented Generation Evaluation
+
+### 15. RAGAs: Automated Evaluation of Retrieval Augmented Generation
+
+- **Authors:** Shahul Es, Jithin James, Luis Espinosa Anke, Steven Schockaert
+- **Year:** 2024
+- **Venue:** EACL 2024 System Demonstrations
+- **DOI:** 10.18653/v1/2024.eacl-demo.16
+- **Category:** RAG Evaluation
+- **Description:** RAGAs provides automated metrics for evaluating retrieval-augmented generation systems, including retrieval quality, context relevance, and answer quality.
+- **Link:** https://aclanthology.org/2024.eacl-demo.16/
+
+### 16. ARES: An Automated Evaluation Framework for Retrieval-Augmented Generation Systems
+
+- **Authors:** Jon Saad-Falcon, Omar Khattab, Christopher Potts, Matei Zaharia
+- **Year:** 2024
+- **Venue:** NAACL 2024
+- **DOI:** 10.18653/v1/2024.naacl-long.20
+- **Category:** RAG Evaluation
+- **Description:** ARES provides an automated framework for evaluating retrieval-augmented generation systems using synthetic data and evaluation models.
+- **Link:** https://aclanthology.org/2024.naacl-long.20/
+
+---
+
+## 7. Knowledge and Scientific Benchmarks
+
+### 17. Measuring Massive Multitask Language Understanding
+
+- **Authors:** Dan Hendrycks, Collin Burns, Steven Basart, Andy Zou, Mantas Mazeika, Dawn Song, Jacob Steinhardt
+- **Year:** 2021
+- **Venue:** ICLR 2021
+- **Category:** Knowledge and Reasoning Benchmark
+- **Description:** MMLU evaluates language model knowledge and reasoning across 57 subjects, including several scientific and professional domains.
+- **Link:** https://arxiv.org/abs/2009.03300
+
+### 18. GPQA: A Graduate-Level Google-Proof Q&A Benchmark
+
+- **Authors:** David Rein, Betty Li Hou, Asa Cooper Stickland, Jackson Petty, Richard Yuanzhe Pang, Julien Dirani, Julian Michael, Samuel R. Bowman
+- **Year:** 2023
+- **Category:** Scientific Knowledge Benchmark
+- **Description:** GPQA contains difficult questions in biology, physics, and chemistry created by domain experts. It is useful for testing whether LLMs possess reliable scientific knowledge.
+- **Link:** https://arxiv.org/abs/2311.12022
+
+### 19. Generating Benchmarks for Factuality Evaluation of Language Models
+
+- **Authors:** Dor Muhlgay, Ori Ram, Inbal Magar, Yoav Levine, Nir Ratner, Yonatan Belinkov, Omri Abend, Kevin Leyton-Brown, Amnon Shashua, Yoav Shoham
+- **Year:** 2024
+- **Venue:** EACL 2024
+- **Category:** Factuality Benchmark Generation
+- **Description:** This paper studies methods for constructing benchmarks that can be used to evaluate factuality in language models.
+- **Link:** https://aclanthology.org/2024.eacl-long.4/
+
+---
+
+## 8. Biomedical and Healthcare Evaluation
+
+### 20. PubMedQA: A Dataset for Biomedical Research Question Answering
+
+- **Authors:** Qiao Jin, Bhuwan Dhingra, Zhengping Liu, William W. Cohen, Xinghua Lu
+- **Year:** 2019
+- **Venue:** EMNLP-IJCNLP 2019
+- **DOI:** 10.18653/v1/D19-1259
+- **Category:** Biomedical Question Answering
+- **Description:** PubMedQA is a biomedical question-answering dataset based on research articles and abstracts from PubMed. It is useful for evaluating LLM performance on biomedical scientific questions.
+- **Link:** https://aclanthology.org/D19-1259/
+
+### 21. MedMCQA: A Large-scale Multi-Subject Multi-Choice Dataset for Medical Domain Question Answering
+
+- **Authors:** Ankit Pal, Logesh Kumar Umapathi, Malaikannan Sankarasubbu
+- **Year:** 2022
+- **Venue:** Conference on Health, Inference, and Learning
+- **Category:** Medical Knowledge Benchmark
+- **Description:** MedMCQA is a large medical question-answering dataset covering multiple medical subjects and topics. It can be used to evaluate knowledge and reasoning in medical LLMs.
+- **Link:** https://proceedings.mlr.press/v174/pal22a.html
+
+---
+
+## Summary
+
+This collection contains 21 scholarly papers covering:
+
+- LLM factuality
+- Hallucination detection
+- Scientific claim verification
+- Factual consistency
+- Long-form factuality
+- Citation and evidence grounding
+- Retrieval-augmented generation
+- Knowledge benchmarks
+- Scientific reasoning
+- Biomedical and healthcare question answering
+
+The papers are organized by research area to make the collection easier to navigate and useful for researchers studying factual accuracy in large language models.
