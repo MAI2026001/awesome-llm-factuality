@@ -64,10 +64,12 @@ Relevant open-source implementations related to LLM evaluation, factuality, hall
 
 ## Tutorials and Learning Resources
 
-Tutorials, documentation, lectures, and other learning resources related to LLM evaluation and factuality.
+Tutorials, documentation, and learning resources for understanding LLM factuality, hallucination, RAG, evidence grounding, and evaluation.
 
-*This section will be expanded with verified resources.*
+[View Tutorials and Learning Resources](tutorials/tutorials.md)
 
 ## License
 
 This repository is released under the MIT License.
+
+
