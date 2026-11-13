@@ -6,7 +6,7 @@
 
 A controlled comparison of a majority-class floor, an NLI cross-encoder, and two small open instruction-tuned language models on SciFact claim–abstract verification. The study focuses on abstention behavior and errors involving quantitative claims.
 
-**GitHub:** https://github.com/MAI2026001/Small-Open-Language-Models-on-Scientific-Claim-Verification
+**GitHub:** (https://github.com/MAI2026001/awesome-llm-factuality/tree/AITR-Lab02/AITR_Lab02_MAI2026001_SciFactLLM)
 
 ## Research question and models
 
