@@ -1,0 +1,31 @@
+claim_id,claim,rule_says_numeric,human_says_quantitative
+536,Hypocretin neurones induce panicprone state in rats.,False,False
+501,Headaches are not correlated with cognitive impairment.,False,False
+907,PGE 2 promotes intestinal tumor growth by altering the expression of tumor suppressing and DNA repair genes.,True,False
+384,Epidemiological disease burden from noncommunicable diseases is more prevalent in low economic settings.,False,False
+137,Asymptomatic visual impairment screening in elderly populations does not lead to improved vision.,False,False
+386,Errors in peripheral IV drug administration are most common during bolus administration and multiple-step medicine preparations.,False,False
+232,Cataract and trachoma are the primary cause of blindness in Southern Sudan.,False,False
+269,Cold exposure reduces BAT recruitment.,False,False
+249,Chenodeosycholic acid treatment reduces whole-body energy expenditure.,False,False
+551,ITAM phosphorylation prevents the transfer of the T cell receptor (TCR) signal from the echo-domain to the cytoplasmic tail of the T cell receptor (TCR).,False,False
+1100,Statins increase blood cholesterol.,False,False
+1226,"The loss of the TET protein functions may have dire biological consequences, such as myeloid cancers.",False,False
+478,Golli-deficient T-cells prefer to differentiate into an anergic phenotype in the adaptive immune response when there are increased levels of Ca2+ in the cytosol.,True,False
+56,APOE4 expression in iPSC-derived neurons increases AlphaBeta production and tau phosphorylation causing GABA neuron degeneration.,True,False
+57,"APOE4 expression in iPSC-derived neurons increases AlphaBeta production and tau phosphorylation, delaying GABA neuron degeneration.",True,False
+1200,The binding orientation of the ML-SA1 activator at hTRPML2 is different from the binding orientation of the ML-SA1 activator at hTRPML1.,True,False
+808,Most termination events in Okazaki fragments are sequence specific.,False,False
+982,Proteins synthesized at the growth cone are ubiquitinated at a higher rate than proteins from the cell body.,True,True
+598,Incidence rates of cervical cancer have increased due to nationwide screening programs based primarily on cytology to detect uterine cervical cancer.,False,True
+1221,The genomic aberrations found in matasteses are very similar to those found in the primary tumor.,False,False
+380,Enhanced early production of inflammatory chemokines improves viral control in the lung.,False,False
+436,Free histones are degraded by a Rad53-dependent mechanism once DNA has been replicated.,True,False
+1344,Up-regulation of the p53 pathway and related molecular events casues cancer resistance and results in a significantly shortened lifespan marked by senescent cells and accelerated organismal aging.,True,False
+51,ALDH1 expression is associated with better breast cancer outcomes.,True,False
+502,"Healthcare delivery efficiency in crowded delivery centers is impaired by improving structural, logistical, and interpersonal elements.",False,False
+1336,UCB T cells reduce TCR diversity after transplantation.,False,False
+1319,Transplanted human glial cells can differentiate within the host animal.,False,False
+146,Autologous transplantation of mesenchymal stem cells has lower rates of rejection than induction therapy with anti-interleukin-2 receptor antibodies.,True,False
+1019,Rapid phosphotransfer rates govern fidelity in two component systems,False,False
+1337,Ubiquitin ligase UBC13 generates a K63-linked polyubiquitin moiety at PCNA K164.,True,False

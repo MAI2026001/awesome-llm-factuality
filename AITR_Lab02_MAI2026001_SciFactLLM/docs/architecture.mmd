@@ -1,0 +1,20 @@
+flowchart TD
+  A[SciFact files] --> B[Load and validate]
+  B --> C[Build claim-abstract pairs]
+  C --> D[Tag numeric / non-numeric]
+  C --> E1[Majority floor]
+  C --> E2[NLI cross-encoder]
+  C --> E3[LLM small]
+  C --> E4[LLM large, 4-bit]
+  E3 --> F[Templates T1 T2 T3, 0 and 3 shot]
+  E4 --> F
+  E1 --> G[Prediction CSVs]
+  E2 --> G
+  F --> G
+  G --> H[Alignment checks]
+  H --> I[Macro-F1, NEI metrics, bootstrap CIs]
+  H --> J[Error analysis: numeric vs other]
+  H --> K[Time per pair]
+  I --> L[results.csv, tables, figures]
+  J --> L
+  K --> L

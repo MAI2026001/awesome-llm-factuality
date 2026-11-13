@@ -1,0 +1,56 @@
+{
+ "runs_checked": 26,
+ "max_abs_diff_vs_results_csv": 9.540979117872439e-17,
+ "n_pairs": 339,
+ "n_claims": 300,
+ "raw_rows_per_file": 340,
+ "gold_counts_after_dedup": {
+  "SUPPORT": 138,
+  "NEI": 130,
+  "CONTRADICT": 71
+ },
+ "majority_label_in_file": "SUPPORT",
+ "majority_label_from_train_counts": "SUPPORT",
+ "fewshot_distinct_sets_per_seed": {
+  "13": 1,
+  "2026": 1,
+  "42": 1
+ },
+ "fewshot_vs_dev": {
+  "13": {
+   "pair_ids": [
+    "382_11659421",
+    "615_9638032",
+    "481_14706752"
+   ],
+   "claims_also_in_dev": [],
+   "abstracts_also_in_dev": [
+    "615_9638032"
+   ]
+  },
+  "2026": {
+   "pair_ids": [
+    "189_4421578",
+    "635_1686997",
+    "1402_8126244"
+   ],
+   "claims_also_in_dev": [],
+   "abstracts_also_in_dev": []
+  },
+  "42": {
+   "pair_ids": [
+    "999_16472469",
+    "250_1568684",
+    "47_3512154"
+   ],
+   "claims_also_in_dev": [],
+   "abstracts_also_in_dev": [
+    "999_16472469",
+    "250_1568684"
+   ]
+  }
+ },
+ "numeric_rule_check_rows": 30,
+ "numeric_rule_check_human_labels_filled": 0,
+ "paired_all_ci_include_zero": true
+}

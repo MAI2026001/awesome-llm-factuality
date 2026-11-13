@@ -1,0 +1,12 @@
+# Minimum packages. Colab already provides most of these; do not reinstall torch there.
+# Exact versions used for the reported results are recorded in requirements.lock.txt
+# (generate it with: bash scripts/freeze_env.sh after a successful run).
+numpy
+pandas
+scikit-learn
+matplotlib
+pyyaml
+torch
+transformers
+accelerate
+bitsandbytes

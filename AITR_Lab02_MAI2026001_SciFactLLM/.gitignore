@@ -1,0 +1,9 @@
+data/raw/
+*.pt
+*.bin
+*.safetensors
+.env
+*token*
+__pycache__/
+.ipynb_checkpoints/
+results_download.zip

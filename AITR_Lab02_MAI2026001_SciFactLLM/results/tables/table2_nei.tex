@@ -1,0 +1,27 @@
+\begin{table}[t]
+\centering
+\footnotesize
+\caption{Handling of NOT ENOUGH INFO pairs (means over runs). Conf.-wrong is the share of gold-NEI pairs labelled SUPPORT or CONTRADICT. ECE: 10 bins, confidence = highest label probability. No run produced an INVALID output.}
+\label{tab:nei}
+\resizebox{\columnwidth}{!}{%
+\begin{tabular}{llrrrrr}
+\hline
+Method & Setting & Runs & NEI recall & NEI prec. & Conf.-wrong & ECE \\
+\hline
+llm\_large & T1, 0-shot & 1 & 0.877 & 0.687 & 0.123 & 0.225 \\
+llm\_large & T1, 3-shot & 3 & 0.710 & 0.827 & 0.290 & 0.243 \\
+llm\_large & T2, 0-shot & 1 & 0.877 & 0.671 & 0.123 & 0.237 \\
+llm\_large & T2, 3-shot & 3 & 0.774 & 0.810 & 0.226 & 0.220 \\
+llm\_large & T3, 0-shot & 1 & 0.885 & 0.650 & 0.115 & 0.252 \\
+llm\_large & T3, 3-shot & 3 & 0.800 & 0.783 & 0.200 & 0.223 \\
+llm\_small & T1, 0-shot & 1 & 0.331 & 0.956 & 0.669 & 0.265 \\
+llm\_small & T1, 3-shot & 3 & 0.077 & 0.672 & 0.923 & 0.380 \\
+llm\_small & T2, 0-shot & 1 & 0.315 & 0.911 & 0.685 & 0.220 \\
+llm\_small & T2, 3-shot & 3 & 0.321 & 0.789 & 0.679 & 0.223 \\
+llm\_small & T3, 0-shot & 1 & 0.231 & 1.000 & 0.769 & 0.275 \\
+llm\_small & T3, 3-shot & 3 & 0.097 & 0.882 & 0.903 & 0.324 \\
+majority & - & 1 & 0.000 & -- & 1.000 & -- \\
+nli & - & 1 & 0.831 & 0.684 & 0.169 & 0.145 \\
+\hline
+\end{tabular}}
+\end{table}

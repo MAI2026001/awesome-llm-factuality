@@ -1,0 +1,28 @@
+# Frozen experimental settings. Changes after the freeze must be logged in research_decisions.md.
+project: scifact_llm_comparison
+seeds: [13, 42, 2026]          # few-shot example selection and bootstrap
+data:
+  url: https://scifact.s3-us-west-2.amazonaws.com/release/latest/data.tar.gz   # from the official SciFact GitHub README
+  dir: data/raw
+  eval_split: dev              # test labels are held out by the dataset authors (leaderboard only)
+  fewshot_split: train
+numeric_rule: configs/numeric_rule.yaml
+prompts: configs/prompts.yaml
+models:                        # check licence and model card for each before running
+  nli: facebook/bart-large-mnli
+  llm_small: Qwen/Qwen2.5-1.5B-Instruct
+  llm_large: Qwen/Qwen2.5-7B-Instruct
+llm:
+  load_4bit: [llm_large]
+  max_new_tokens: 8
+  max_input_tokens: 3072
+  shots: [0, 3]
+  templates: [T1, T2, T3]
+bootstrap:
+  n: 1000
+  seed: 2026
+paths:
+  predictions: results/predictions
+  results_csv: results/results.csv
+  tables: results/tables
+  figures: results/figures

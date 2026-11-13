@@ -1,0 +1,29 @@
+# Frozen prompt templates. T3 = T2 plus an explicit abstention instruction.
+system: "You are a careful assistant that checks scientific claims against paper abstracts."
+user_format: |
+  Claim: {claim}
+
+  Abstract title: {title}
+  Abstract: {abstract}
+
+  Answer with one word.
+templates:
+  T1:
+    instruction: |
+      Read the claim and the abstract. Decide whether the abstract supports the claim, contradicts it, or does not contain enough information.
+      Answer with exactly one word: SUPPORT, CONTRADICT or NEI.
+  T2:
+    instruction: |
+      Read the claim and the abstract. Use only the abstract.
+      SUPPORT: the abstract provides evidence that the claim is true.
+      CONTRADICT: the abstract provides evidence that the claim is false.
+      NEI: the abstract does not provide enough information to decide.
+      Answer with exactly one word: SUPPORT, CONTRADICT or NEI.
+  T3:
+    instruction: |
+      Read the claim and the abstract. Use only the abstract.
+      SUPPORT: the abstract provides evidence that the claim is true.
+      CONTRADICT: the abstract provides evidence that the claim is false.
+      NEI: the abstract does not provide enough information to decide.
+      If the abstract does not clearly settle the claim, answer NEI instead of guessing.
+      Answer with exactly one word: SUPPORT, CONTRADICT or NEI.

@@ -1,0 +1,5 @@
+# A claim is tagged numeric if any pattern matches. Frozen before looking at model errors.
+# Known weakness: dataset names such as "1,000 genomes" contain digits but are not quantitative claims.
+patterns:
+  - '\d'
+  - '\b(percent|percentage|\w*fold|twice|double[sd]?|half|triple[sd]?|tenfold|ratio|rate|dose)\b'

@@ -1,0 +1,44 @@
+{
+  "train_claims": {
+    "n": 809,
+    "with_evidence": 505,
+    "with_cited_doc_ids": 809
+  },
+  "dev_claims": {
+    "n": 300,
+    "with_evidence": 188,
+    "with_cited_doc_ids": 300
+  },
+  "test_claims": {
+    "n": 300,
+    "with_evidence": 0,
+    "with_cited_doc_ids": 0
+  },
+  "train_pairs": {
+    "n_pairs": 919,
+    "n_claims": 809,
+    "gold_counts": {
+      "SUPPORT": 370,
+      "NEI": 355,
+      "CONTRADICT": 194
+    },
+    "numeric_share": 0.4134929270946681,
+    "exclusions": {}
+  },
+  "dev_pairs": {
+    "n_pairs": 340,
+    "n_claims": 300,
+    "gold_counts": {
+      "SUPPORT": 138,
+      "NEI": 131,
+      "CONTRADICT": 71
+    },
+    "numeric_share": 0.40294117647058825,
+    "exclusions": {}
+  },
+  "dev_train_abstract_overlap": {
+    "docs_in_both": 181,
+    "dev_docs": 283,
+    "dev_pairs_with_overlapping_doc": 217
+  }
+}
