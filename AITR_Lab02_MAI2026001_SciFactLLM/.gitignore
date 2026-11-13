@@ -7,3 +7,6 @@ data/raw/
 __pycache__/
 .ipynb_checkpoints/
 results_download.zip
+
+.vscode/
+results/predictions/*_smoke*.csv
